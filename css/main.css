@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+body.debug * {
+  outline: 1px solid red;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+@media (width < 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (576px <= width < 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (768px <= width < 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (992px <= width < 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (1200px <= width < 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (width >= 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}/*# sourceMappingURL=main.css.map */
