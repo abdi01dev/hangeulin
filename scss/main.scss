@@ -4,10 +4,25 @@
 }
 
 body {
+  height: 3000px;
   font-family: 'Rubik', sans-serif;
+  position: relative;
 
   &.debug * {
     outline: 1px solid red;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 459px;
+    height: 459px;
+    top: -25%;
+    left: -25%;
+    border-radius: 50%;
+    background-color: rgb(244, 148, 177);
+    filter: blur(150px);
   }
 }
 
@@ -21,12 +36,13 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .navbar {
   .container {
-    padding-block: 42px;
+    // padding-top: 42px;
+    margin-top: 42px;
     height: 57px;
     display: flex;
     justify-content: space-between;
